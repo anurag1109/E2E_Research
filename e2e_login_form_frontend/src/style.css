@@ -1,0 +1,176 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* Login page */
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(0, 119, 255);
+}
+
+.login-page input {
+  border-radius: 20px;
+  border: none;
+}
+
+.login-page button {
+  background-color: rgb(241, 99, 99);
+  border-radius: 20px;
+  border: none;
+  display: block;
+  width: -webkit-fill-available;
+  color: white;
+}
+input:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: rgb(240, 132, 132);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.loginform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  /* color: white; */
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: rgb(234, 197, 219);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.menu {
+  width: 2rem;
+  cursor: pointer;
+}
+.menu > img {
+  width: 100%;
+}
+
+.userlogo {
+  width: 2rem;
+}
+.userlogo  img {
+  width: 100%;
+}
+
+.maincontainer {
+  display: flex;
+  width: 89%;
+  padding-bottom: 0.5rem;
+}
+
+.formlogo {
+  width: 20px;
+}
+.tablelogo {
+  width: 20px;
+}
+
+/* sidebar */
+
+.sidebar {
+  background-color: rgb(182, 209, 224);
+  padding: 1rem;
+  width: 11rem;
+  /* position: absolute; */
+  height: 120vh;
+  position: fixed;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+/* user form */
+
+.rightside {
+  width: 70%;
+}
+
+.formbox {
+  width: 100%;
+  margin-left: 15%;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+
+.formbox div {
+  width: 95%;
+}
+.formbox input:not([type="radio"]) {
+  width: 100%;
+}
+
+.submit {
+  background-color: rgb(138, 138, 238);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* table */
+
+.allusers {
+  width: 100%;
+  margin-left: 15.5%;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+table {
+  margin-top: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+}
+
+table th,
+table td {
+  padding: 0.5rem;
+  border: 1px solid black;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: rgb(232, 232, 232);
+}
